@@ -48,3 +48,4 @@ while rend(t) < 5:
 print(f"每隔{t}小时转移一次为宜。")
 print(f"A地想租车人数{customer_a},未租到人数{no_bike_count_a}, 未租到比例{ratio_a:0.2f}%")
 print(f"B地想租车人数{customer_b},未租到人数{no_bike_count_b}, 未租到比例{ratio_b:0.2f}%")
+
