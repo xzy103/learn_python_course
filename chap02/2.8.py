@@ -5,9 +5,16 @@
 import random
 
 
-def rend(t):
+def rend(time):
+    """
+    每隔time小时将车从A地搬一半到B地
+    返回B地未租到车的可能性ratio_b%
+    函数中有设置全局变量
+    :param time: 搬运时间间隔
+    :return: B地未租到车的可能性ratio_b%
+    """
     random.seed()
-    n = 10000
+    n = 500000
     global customer_a, customer_b, no_bike_count_a, no_bike_count_b, ratio_a, ratio_b
     prob_a, prob_b = 0.3, 0.5  # A地租车可能性 B地租车可能性
     num_a, num_b = 100, 100  # AB两地车的数量
@@ -31,7 +38,7 @@ def rend(t):
             else:
                 no_bike_count_b += 1
 
-        if i % t == 0:
+        if i % time == 0:
             trans = num_a//2
             num_a -= trans
             num_b += trans
@@ -41,11 +48,19 @@ def rend(t):
     return ratio_b
 
 
-t = 1
-while rend(t) < 5:
-    t += 1
+print('>>>>>模拟过程约需要10s-30s.')
+t = 550  # 搬运时间间隔，粗略测试后设置为550。
+ratio_b_temp = 0  # break前一次的ratio_b值
+while True:
+    rend(t)
+    if ratio_b > 5:
+        ratio_b = ratio_b_temp
+        t -= 1
+        break
+    else:
+        t += 1
+        ratio_b_temp = ratio_b
 
 print(f"每隔{t}小时转移一次为宜。")
 print(f"A地想租车人数{customer_a},未租到人数{no_bike_count_a}, 未租到比例{ratio_a:0.2f}%")
 print(f"B地想租车人数{customer_b},未租到人数{no_bike_count_b}, 未租到比例{ratio_b:0.2f}%")
-
