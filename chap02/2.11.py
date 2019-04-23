@@ -9,5 +9,9 @@ CHICK = 1/3  # 鸡雏的单价
 
 money = 100
 rooster = hen = chick = 0  # 三种鸡数量的初值
-for r in range(...):
-    ...
+for r in range(money//ROOSTER):
+    for h in range(money//HEN):
+        for c in range(int(money/CHICK)):
+            if r*ROOSTER+h*HEN+c*CHICK == 100:
+                print(f'买公鸡{r}只，母鸡{h}只，鸡雏{c}只')
+    print()

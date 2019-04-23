@@ -2,4 +2,7 @@
 # Author:徐熙林
 # Date:2019.4.13
 
-print("Hello World!")
+import time
+for s in "Hello World!":
+    print(s, flush=True, end='')
+    time.sleep(0.2)
