@@ -1,9 +1,8 @@
 # -*- coding:UTF-8 -*-
 # Author:徐熙林-金融162班
-# Date:2019.4.26
+# Date:2019.4.27
 
 import csv
-from easygraphics import dialog
 
 
 class UserInfo:
@@ -27,9 +26,13 @@ with open('ex2-1.用户信息.csv', 'r', encoding='utf-8') as file:
         user = UserInfo(id, username, name, gender, Tel, password, mail, rank)
         users.append(user)
 
-
-print('id, 账号, 姓名, 性别, 电话号码, 密码, 邮箱, 用户级别')
+vips = []
 for s in users:
-    print(s.id, s.username, s.name, s.gender, s.Tel, s.password, s.mail, s.rank)
+    if s.rank == 'VIP':
+        vips.append(s)
 
-dialog.show_objects(users, title='用户信息', width=1500, height=900)
+# 写入到vip.csv文件
+with open('vip.csv', 'w', encoding='utf-8') as fw:
+    fw.write('id,账号,姓名,性别,电话号码,密码,邮箱,用户级别\n')
+    for v in vips:
+        fw.write(f'{v.id},{v.username},{v.name},{v.gender},{v.Tel},{v.password},{v.mail},{v.rank}\n')
