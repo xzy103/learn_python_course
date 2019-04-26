@@ -7,6 +7,7 @@
     <orderEntry type="module" module-name="programming_with_python" />
     <orderEntry type="module" module-name="test" />
     <orderEntry type="module" module-name="tests" />
+    <orderEntry type="module" module-name="Bjfu_Home" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
