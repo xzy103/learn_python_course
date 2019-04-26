@@ -16,7 +16,7 @@ a = 0  # 用来暂存因数
 
 for i in range(2, n):
     for j in range(2, m):
-        if n % i == 0 and i != a:
+        if m % i == 0 and i != a:
             while m % i == 0:
                 m = int(m/i)  # while用来过滤重复的因数
             a = i

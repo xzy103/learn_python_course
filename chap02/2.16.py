@@ -14,14 +14,15 @@
 n = int(input('请输入一个正整数：'))
 ls = []
 for i in range(2, n//2+1):
+    is_prime = True
     for j in range(2, i//2+1):
         if i % j == 0:
+            is_prime = False
             break  # 如果break，则i不是质数
-    if n % i == 0:
+    if is_prime and n % i == 0:
+        while n % i == 0:
+            n = int(n/i)
         print(i, end=' ')
-        # while n % i == 0:
-        #     n = int(n/i)
-        # print(i, end=' ')
 
 
 
