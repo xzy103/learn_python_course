@@ -36,3 +36,4 @@ with open('vip.csv', 'w', encoding='utf-8') as fw:
     fw.write('id,账号,姓名,性别,电话号码,密码,邮箱,用户级别\n')
     for v in vips:
         fw.write(f'{v.id},{v.username},{v.name},{v.gender},{v.Tel},{v.password},{v.mail},{v.rank}\n')
+print('用户信息已写入到[vip.csv]')

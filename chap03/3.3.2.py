@@ -2,8 +2,8 @@
 # Author:徐熙林-金融162班
 # Date:2019.4.27
 
+
 import csv
-from easygraphics import dialog
 
 
 class Score:
@@ -24,12 +24,13 @@ with open('ex2-2.scores.csv', 'r', encoding='utf-8') as fr:
         score = Score(id_, name, class_, math, literature)
         scores.append(score)
 
-sum_math = sum_literature = 0
+info1_sum_math = info1_sum_literture = count = 0
 for score in scores:
-    sum_math += float(score.math)
-    sum_literature += float(score.literature)
-avg_math = sum_math/len(scores)
-avg_literature = sum_literature/len(scores)
-print(f'所有同学的数学平均成绩是{round(avg_math, 2)}，语文平均成绩是{round(avg_literature, 2)}。')
+    if score.class_ == '信管1班':
+        count += 1
+        info1_sum_math += float(score.math)
+        info1_sum_literture += float(score.literature)
 
-dialog.show_objects(scores, title='成绩信息', width=1080, height=720)
+info1_avg_math = info1_sum_math/count
+info1_avg_literture = info1_sum_literture/count
+print(f'信管1班的数学平均成绩是{round(info1_avg_math, 2)}，语文平均成绩是{round(info1_avg_literture, 2)}。')
