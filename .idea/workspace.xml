@@ -16,13 +16,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chap03/3.6.1.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chap04/4.1.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -60,8 +65,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="202" />
-    <option name="y" value="-26" />
+    <option name="x" value="147" />
+    <option name="y" value="150" />
     <option name="width" value="1944" />
     <option name="height" value="1044" />
   </component>
@@ -73,8 +78,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,8 +193,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18824464" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18824464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -199,7 +205,7 @@
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.3285968" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.669627" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.66843975" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32624114" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.61634105" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -354,9 +360,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Bjfu_Home/北林全家桶合集版/Run_BjfuHome.py" />
-    <entry file="file://$PROJECT_DIR$/chap03/3.1.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/chap03/3.1.py" />
     <entry file="file://$PROJECT_DIR$/../Bjfu_Home/BjfuHome/BjfuCourse.py" />
     <entry file="file://$PROJECT_DIR$/../Bjfu_Home/BjfuHome/BjfuEm.py" />
     <entry file="file://$PROJECT_DIR$/../Bjfu_Home/BjfuHome/BjfuFtp.py" />
@@ -386,6 +390,9 @@
           <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap04/4.1.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

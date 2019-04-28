@@ -19,32 +19,35 @@ class UserInfo:
 
 
 def read_csv(filename: str):
-    """
-    从csv文件中读取用户信息以账号为关键字存入字典
-    :param filename: 文件名
-    :return: 以账号为关键字的字典
-    """
-    usersdict = {}  # 定义一个字典
     with open(filename, 'r', encoding='utf-8') as file:
         userls = csv.reader(file)
         next(userls)
+        users = []
         for u in userls:
             id, username, name, gender, Tel, password, mail, rank = u[0], u[1], u[2], u[3], u[4], u[5], u[6], u[7]
             user = UserInfo(id, username, name, gender, Tel, password, mail, rank)
-            usersdict[username] = user
-    return usersdict
+            users.append(user)
+    return users
 
 
-id_ = input("请输入要查找的账号：")
-usersdict = read_csv('ex2-1.用户信息.csv')
-if id_ in usersdict:
-    s = usersdict[id_]
-    print(s.id, s.username, s.name, s.gender, s.Tel, s.password, s.mail, s.rank)
-else:
-    print('查无此人！')
+def key_username(user):
+    return user.username
 
-ranks = set()
-values = usersdict.values()
-for s in values:
-    ranks.add(s.rank)
-print(f'共有有{len(ranks)}种用户级别，即', ranks)
+
+def key_mail(user):
+    return user.mail
+
+
+if __name__ == '__main__':
+    users = read_csv(filename='../chap03/ex2-1.用户信息.csv')
+    print('按账号排序...')
+    print('id, 账号, 姓名, 性别, 电话号码, 密码, 邮箱, 用户级别')
+    users = sorted(users, key=key_username)
+    for s in users:
+        print(s.id, s.username, s.name, s.gender, s.Tel, s.password, s.mail, s.rank)
+
+    print()
+    print('按邮箱排序...')
+    users = sorted(users, key=key_mail)
+    for s in users:
+        print(s.id, s.username, s.name, s.gender, s.Tel, s.password, s.mail, s.rank)
