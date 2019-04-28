@@ -15,7 +15,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chap03/3.6.1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -45,12 +55,13 @@
         <option value="$PROJECT_DIR$/chap02/2.15.py" />
         <option value="$PROJECT_DIR$/chap03/3.1.py" />
         <option value="$PROJECT_DIR$/../Bjfu_Home/Run_BjfuHome.py" />
+        <option value="$PROJECT_DIR$/chap03/3.5.2.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-75" />
-    <option name="y" value="-27" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="202" />
+    <option name="y" value="-26" />
     <option name="width" value="1944" />
     <option name="height" value="1044" />
   </component>
@@ -68,7 +79,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Chinese-Stock-Prediction-Using-Weibo-Baidu-News-Sentiment" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -90,6 +101,34 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="3.5.2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="learn_python_course" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chap03" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/chap03/3.5.2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.3.5.2" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\WTG\AppData\Roaming\Subversion</configuration>
@@ -148,9 +187,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-50" y="-18" width="1296" height="696" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18492064" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18824464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -161,7 +200,7 @@
       <window_info anchor="bottom" id="TODO" order="5" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.3285968" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.669627" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="8" side_tool="true" visible="true" weight="0.32566372" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32624114" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.61634105" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -328,5 +367,25 @@
     <entry file="file://$PROJECT_DIR$/../Bjfu_Home/BjfuHome/BjfuWifi.py" />
     <entry file="file://$PROJECT_DIR$/../../../temp/Run_BjfuHome.py" />
     <entry file="file://$PROJECT_DIR$/../Bjfu_Home/Run_BjfuHome.py" />
+    <entry file="file://$PROJECT_DIR$/chap03/3.5.1.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap03/3.5.2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Chinese-Stock-Prediction-Using-Weibo-Baidu-News-Sentiment/weibo/get_weibo_keyword.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chap03/3.6.1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
