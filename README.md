@@ -17,4 +17,7 @@ python程序设计基础课练习与存档
 
 
 ## About me
-BJFU非计算机专业的一只野生猿，欢迎与我交流Python。(๑¯∀¯๑) 
+BJFU非计算机专业的一只野生猿，欢迎与我交流Python。(๑¯∀¯๑)  
+>作者的其他项目  
+[BjfuHome](https://github.com/xzy103/Bjfu_Home)  
+[GetBilibili](https://github.com/xzy103/GetBilibili)  
