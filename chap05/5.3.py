@@ -16,5 +16,6 @@ A = np.array([
 W = np.array([0.07, 0.04, 0.13, 0.26, 0.2, 0.3])
 
 T = np.dot(A.T, W)
-print(['A ', 'B ', 'C ', 'D '])
+print('四个品牌的总分如下')
+print('A品牌', 'B品牌', 'C品牌', 'D品牌', sep='  ')
 print(T)
