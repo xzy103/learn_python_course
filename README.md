@@ -6,7 +6,7 @@ https://github.com/xzy103/learn_python_course
 
 ## Teaching Materials
 教学材料文件夹，仅供学习参考，请勿大肆传播和商用！  
-
+[programming_with_python](https://github.com/royqh1979/programming_with_python)  
 
 ## TODO
 - [x] 完成第一章并上传 (基础)  
