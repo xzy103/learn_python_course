@@ -2,9 +2,7 @@
 # Author:徐熙林-金融162班
 # Date:2019.5.15
 
-
 import numpy as np
-
 
 A = np.array([
     [50, 80, 60, 90],
