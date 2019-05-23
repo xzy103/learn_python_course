@@ -1,12 +1,11 @@
 # learn_python_course
 python程序设计基础课练习与存档  
-https://github.com/xzy103/learn_python_course  
 **仅供参考，请勿抄袭！**  
-谢谢~
+https://github.com/xzy103/learn_python_course  
 
 ## Teaching Materials
 教学材料文件夹，仅供学习参考，请勿大肆传播和商用！  
-[programming_with_python](https://github.com/royqh1979/programming_with_python)  
+[查看教学示例代码](https://github.com/royqh1979/programming_with_python)  
 
 ## TODO
 - [x] 完成第一章并上传 (基础)  
