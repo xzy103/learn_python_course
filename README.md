@@ -20,5 +20,5 @@ https://github.com/xzy103/learn_python_course
 ## About me
 BJFU非计算机专业的一只野生猿，欢迎与我交流Python。(๑¯∀¯๑)  
 - 作者的其他项目  
-北林全家桶 | [BjfuHome](https://github.com/xzy103/Bjfu_Home)  
-B站视频下载器 | [GetBilibili](https://github.com/xzy103/GetBilibili)  
+[北林全家桶 | BjfuHome](https://github.com/xzy103/Bjfu_Home)  
+[B站视频下载器 | GetBilibili](https://github.com/xzy103/GetBilibili)  
