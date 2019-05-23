@@ -16,6 +16,6 @@ for d in nums:
 from itertools import product
 nums = range(1, 10)
 for d, e, f, g in product(nums, nums, nums, nums):
-    if (10 * d + e) * (10 * f + g) == (10 * e + d) * (10 * g + f) and (d != e != f != g):
+    if (10 * d + e) * (10 * f + g) == (10 * e + d) * (10 * g + f) and len({d, e, f, g}) == 4:
         print('defg分别为：', d, e, f, g)
 '''
