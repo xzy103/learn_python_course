@@ -8,7 +8,7 @@ for d in nums:
     for e in nums:
         for f in nums:
             for g in nums:
-                if (10*d+e)*(10*f+g) == (10*e+d)*(10*g+f) and (d != e != f != g):
+                if (10*d+e)*(10*f+g) == (10*e+d)*(10*g+f) and len({d, e, f, g}) == 4:
                     print('d e f g分别为：', d, e, f, g)
 
 
