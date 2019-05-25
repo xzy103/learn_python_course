@@ -36,9 +36,9 @@ if __name__ == '__main__':
     max_student = max(scores, key=key_total)
     min_student = min(scores, key=key_total)
     print(f'总分最高的同学\n{max_student.__dict__}')
-    print(f'总分最低的同学\n{min_student.__dict__}')
-    print('\n总分由高到低排序')
+    print(f'总分最低的同学\n{min_student.__dict__}\n')
+    print('总分由高到低排序')
     print('学号,姓名,班级,数学,语文')
     scores = sorted(scores, key=key_total, reverse=True)
     for s in scores:
-        print(f'{s.id},{s.name},{s.class_},{s.math},{s.literature}')
+        print(f'{s.id} {s.name} {s.class_} {s.math} {s.literature}')

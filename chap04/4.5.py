@@ -21,7 +21,7 @@ def reduce_odd(lt: list, i):
     return lt
 
 
-odd = reduce(reduce_odd, num, [])
-cube = map(map_cube, odd)
+odd = reduce(reduce_odd, num, [])  # 得到小于n的所有奇数列表
+cube = map(map_cube, odd)  # 得到奇数立方列表
 sum_cube = sum(cube)
 print(f'小于{n}的所有奇数的立方和为{sum_cube}')
