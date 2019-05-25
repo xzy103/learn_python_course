@@ -16,13 +16,14 @@ class Score:
         self.sum = sum_
 
 
-with open('ex2-2.scores.csv', 'r', encoding='utf-8') as fr:
+filename = 'ex2-2.scores.csv'
+with open(filename, 'r', encoding='utf-8') as fr:
     scorels = csv.reader(fr)
     next(scorels)
     scores = []
     for s in scorels:
         id_, name, class_, math, literature = s[0], s[1], s[2], s[3], s[4]
-        sum_ = int(math) + int(literature)
+        sum_ = int(math) + int(literature)  # 总分 = 数学成绩 + 语文成绩
         score = Score(id_, name, class_, math, literature, str(sum_))
         scores.append(score)
 
