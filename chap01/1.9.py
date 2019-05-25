@@ -9,7 +9,7 @@ def discount(money):
     :param money: 购物金额
     :return: 折扣方式及折扣价
     """
-    # 满减方式价格
+    # 满减方式的价格
     if money >= 200:
         pay_sub = money-30
     elif money > 0:
@@ -17,13 +17,13 @@ def discount(money):
     else:
         raise ValueError("金额不能小于零！")
 
-    # 折扣方式价格
+    # 折扣方式的价格
     pay_sale = money*0.9
 
     # 两种方式进行对比
     if pay_sale < pay_sub:
         return '打9折', round(pay_sale, 2)
-    elif pay_sale >= pay_sub:
+    else:
         return '满200减30', round(pay_sub, 2)
 
 
