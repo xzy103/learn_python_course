@@ -4,7 +4,7 @@
 
 
 s = 0
-for i in range(1, 10000000):
+for i in range(1, 1000000):
     s += 1/pow(i, 2)
 
 print(s)
