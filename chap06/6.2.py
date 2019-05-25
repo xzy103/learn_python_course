@@ -14,7 +14,8 @@ class Score:
         self.literature = int(literature)
 
 
-with open('../chap03/ex2-2.scores.csv', 'r', encoding='utf-8') as fr:
+filename = '../chap03/ex2-2.scores.csv'
+with open(filename, 'r', encoding='utf-8') as fr:
     scorels = csv.reader(fr)
     next(scorels)
     scores = []
@@ -35,4 +36,5 @@ def find_max(students, n):
 
 
 student = find_max(scores, len(scores))
-print(f'总分最高的同学是{student.name},他的总分是{student.math+student.literature}分。')
+sum_ = student.math+student.literature  # 计算总分
+print(f'总分最高的同学是{student.name},他的总分是{sum_}分。')
