@@ -18,4 +18,5 @@ for age in range(1, 31):
     if age == 30:
         deposit += -50000
     balance += deposit + interest
+
     print(f"{age:<2}岁时，账户余额为{balance:.2f}")
