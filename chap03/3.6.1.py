@@ -29,6 +29,7 @@ with open(filename, 'r', encoding='utf-8') as file:
         users.append(user)
 
 
+# 顺序查找法
 def find_by_name(users, name_key):
     """
     在users这个对象列表中查找name等于name_key的元素
@@ -42,6 +43,7 @@ def find_by_name(users, name_key):
     return -1
 
 
+# 折半查找法
 def find_by_Tel(users, Tel_key):
     """
     在users这个对象列表中查找Tel等于Tel_key的元素

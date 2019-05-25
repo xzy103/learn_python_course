@@ -15,7 +15,8 @@ class Score:
         self.literature = literature
 
 
-with open('ex2-2.scores.csv', 'r', encoding='utf-8') as fr:
+filename = 'ex2-2.scores.csv'
+with open(filename, 'r', encoding='utf-8') as fr:
     scorels = csv.reader(fr)
     next(scorels)
     scores = []
@@ -25,6 +26,7 @@ with open('ex2-2.scores.csv', 'r', encoding='utf-8') as fr:
         scores.append(score)
 
 
+# 顺序查找法
 def find_by_name1(scores, name_key):
     """
     在scores这个对象列表中查找name等于name_key的元素
@@ -38,6 +40,7 @@ def find_by_name1(scores, name_key):
     return -1
 
 
+# 折半查找法
 def find_by_name2(scores, name_key):
     """
     在scores这个对象列表中查找name等于name_key的元素
@@ -64,7 +67,7 @@ if uinfo == -1:
     print(f'找不到姓名为{name}的学生')
 else:
     print('顺序查找的结果为↓')
-    print(f'id:{uinfo.id}, name:{uinfo.name}, class:{uinfo.class_}, math:{uinfo.math}, literature:{uinfo.literature}')
+    print(f'id:{uinfo.id}\nname:{uinfo.name}\nclass:{uinfo.class_}\nmath:{uinfo.math}\nliterature:{uinfo.literature}')
 
 
 uinfo = find_by_name2(scores, name)
@@ -72,4 +75,4 @@ if uinfo == -1:
     print(f'找不到姓名为{name}的学生')
 else:
     print('二分查找的结果为↓')
-    print(f'id:{uinfo.id}, name:{uinfo.name}, class:{uinfo.class_}, math:{uinfo.math}, literature:{uinfo.literature}')
+    print(f'id:{uinfo.id}\nname:{uinfo.name}\nclass:{uinfo.class_}\nmath:{uinfo.math}\nliterature:{uinfo.literature}')
