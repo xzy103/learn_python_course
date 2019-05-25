@@ -32,7 +32,7 @@ def premiun(user):
     return p
 
 
-users = []
+users = []  # 定义用于存放用户信息的列表
 print('>>>>>录入用户信息')
 while True:
     name = input('请输入用户姓名<回车结束录入>：')
