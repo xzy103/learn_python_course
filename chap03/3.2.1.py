@@ -9,8 +9,8 @@ from easygraphics import dialog
 class UserInfo:
     def __init__(self, id_, username, name, gender, Tel, password, mail, rank):
         self.id = id_
-        self.username = username
-        self.name = name
+        self.username = username  # 用户名
+        self.name = name  # 用户姓名
         self.gender = gender
         self.Tel = Tel
         self.password = password
