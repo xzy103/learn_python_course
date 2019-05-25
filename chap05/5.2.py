@@ -21,11 +21,11 @@ def get_normal(mean, dev, n):
     return np.where(result > 0, result, 0)
 
 
-fixed_cost = 50000
-sale_mean, sale_dev = 100000, 25000
-cost_mean, cost_dev = 5, 1
-price_mean, price_dev = 10, 2
-rate_mean, rate_dev = 0.1, 0.02
+fixed_cost = 50000  # 固定成本
+sale_mean, sale_dev = 100000, 25000  # 产品销量
+cost_mean, cost_dev = 5, 1  # 单位成本
+price_mean, price_dev = 10, 2  # 市场价格
+rate_mean, rate_dev = 0.1, 0.02  # 利率
 
 n = 5000000
 sale = get_normal(sale_mean, sale_dev, n)
