@@ -4,7 +4,7 @@
 
 i = 0
 while True:
-    score = int(input("请输入分数（输入-1结束）："))
+    score = int(input("请输入分数(输入-1结束)："))
     if score == -1:
         break
     elif 0 <= score < 60:
