@@ -28,4 +28,4 @@ if sum([len1, len2, len3]) <= 2*max(len1, len2, len3):
     raise ValueError("两边之和小于等于第三边！")
 
 result = area(len1, len2, len3)
-print(f'三角形的面积为：{round(result, 3)}')
+print(f'三角形的面积为：{result:.3f}')  # 保留3位小数
