@@ -7,12 +7,12 @@ import csv
 
 
 class Contacts:
-    def __init__(self, id, name, Tel, mail, unit):
-        self.id = id
+    def __init__(self, id_, name, Tel, mail, unit):
+        self.id = id_
         self.name = name
         self.Tel = Tel
         self.mail = mail
-        self.unit = unit
+        self.unit = unit  # 工作单位
 
 
 class Infos:
@@ -28,8 +28,8 @@ def read_csv(filename: str):
         next(contactsls)
         contacts = []
         for s in contactsls:
-            id, name, Tel, mail, unit = s[0], s[1], s[2], s[3], s[4]
-            contact = Contacts(id, name, Tel, mail, unit)
+            id_, name, Tel, mail, unit = s[0], s[1], s[2], s[3], s[4]
+            contact = Contacts(id_, name, Tel, mail, unit)
             contacts.append(contact)
     return contacts
 
