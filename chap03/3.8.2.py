@@ -7,12 +7,12 @@ import csv
 
 
 class Contacts:
-    def __init__(self, id, name, Tel, mail, unit):
-        self.id = id
+    def __init__(self, id_, name, Tel, mail, unit):
+        self.id = id_
         self.name = name
         self.Tel = Tel
         self.mail = mail
-        self.unit = unit
+        self.unit = unit  # 工作单位
 
 
 def read_csv(filename: str):
@@ -21,37 +21,41 @@ def read_csv(filename: str):
     :param filename: 文件名
     :return: 以邮箱和电话号码为关键字的字典
     """
-    maildict = {}  # 定义一个字典
-    teldict = {}
+    maildict = {}  # 定义一个以邮箱为关键字的字典
+    teldict = {}  # 定义一个以电话为关键字的字典
     with open(filename, 'r', encoding='utf-8') as file:
         contactsls = csv.reader(file)
         next(contactsls)
         for s in contactsls:
-            id, name, Tel, mail, unit = s[0], s[1], s[2], s[3], s[4]
-            contact = Contacts(id, name, Tel, mail, unit)
+            id_, name, Tel, mail, unit = s[0], s[1], s[2], s[3], s[4]
+            contact = Contacts(id_, name, Tel, mail, unit)
             maildict[mail] = contact
             teldict[Tel] = contact
     return maildict, teldict
 
 
 getinfo = input('请输入要查找人的邮箱或电话号码：')
-maildict, teldict = read_csv('ex2-3.contacts.csv')
+readfile = 'ex2-3.contacts.csv'
+maildict, teldict = read_csv(readfile)  # 调用函数 得到两个字典
+
 if getinfo in maildict:
     s = maildict[getinfo]
-    print(f'{s.id},{s.name},{s.Tel},{s.mail},{s.unit}')
+    print(f'{s.id} {s.name} {s.Tel} {s.mail} {s.unit}\n')
 elif getinfo in teldict:
     s = teldict[getinfo]
-    print(f'{s.id},{s.name},{s.Tel},{s.mail},{s.unit}')
+    print(f'{s.id} {s.name} {s.Tel} {s.mail} {s.unit}\n')
 else:
     print("查无此人！")
 
 
-corps = set()
+corps = set()  # 新建一个集合
 values = maildict.values()
 for s in values:
     corps.add(s.unit)
 print(f'共有{len(corps)}家公司')
-print(corps)  # 公司集合
+for corp in corps:
+    print(corp)
+print()
 
 
 newdict = {}

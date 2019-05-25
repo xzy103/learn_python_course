@@ -7,15 +7,15 @@ import csv
 
 
 class UserInfo:
-    def __init__(self, id, username, name, gender, Tel, password, mail, rank):
-        self.id = id
-        self.username = username
-        self.name = name
+    def __init__(self, id_, username, name, gender, Tel, password, mail, rank):
+        self.id = id_
+        self.username = username  # 用户名
+        self.name = name  # 用户姓名
         self.gender = gender
         self.Tel = Tel
         self.password = password
         self.mail = mail
-        self.rank = rank
+        self.rank = rank  # 用户等级
 
 
 def find_min(users, start, end):
@@ -46,16 +46,17 @@ def select_sort(users):
 
 
 if __name__ == "__main__":
-    with open('ex2-1.用户信息.csv', 'r', encoding='utf-8') as file:
+    filename = 'ex2-1.用户信息.csv'
+    with open(filename, 'r', encoding='utf-8') as file:
         userls = csv.reader(file)
         next(userls)
         users = []
         for u in userls:
-            id, username, name, gender, Tel, password, mail, rank = u[0], u[1], u[2], u[3], u[4], u[5], u[6], u[7]
-            user = UserInfo(id, username, name, gender, Tel, password, mail, rank)
+            id_, username, name, gender, Tel, password, mail, rank = u[0], u[1], u[2], u[3], u[4], u[5], u[6], u[7]
+            user = UserInfo(id_, username, name, gender, Tel, password, mail, rank)
             users.append(user)
 
-    select_sort(users)
+    select_sort(users)  # 选择排序函数
     print('邮箱, id, 账号, 姓名, 性别, 电话号码, 密码, 用户级别')
     for s in users:
         print(s.mail, s.id, s.username, s.name, s.gender, s.Tel, s.password, s.rank)

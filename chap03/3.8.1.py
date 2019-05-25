@@ -7,15 +7,15 @@ import csv
 
 
 class UserInfo:
-    def __init__(self, id, username, name, gender, Tel, password, mail, rank):
-        self.id = id
-        self.username = username
-        self.name = name
+    def __init__(self, id_, username, name, gender, Tel, password, mail, rank):
+        self.id = id_
+        self.username = username  # 用户名
+        self.name = name  # 用户姓名
         self.gender = gender
         self.Tel = Tel
         self.password = password
         self.mail = mail
-        self.rank = rank
+        self.rank = rank  # 用户等级
 
 
 def read_csv(filename: str):
@@ -29,22 +29,24 @@ def read_csv(filename: str):
         userls = csv.reader(file)
         next(userls)
         for u in userls:
-            id, username, name, gender, Tel, password, mail, rank = u[0], u[1], u[2], u[3], u[4], u[5], u[6], u[7]
-            user = UserInfo(id, username, name, gender, Tel, password, mail, rank)
-            usersdict[username] = user
+            id_, username, name, gender, Tel, password, mail, rank = u[0], u[1], u[2], u[3], u[4], u[5], u[6], u[7]
+            user = UserInfo(id_, username, name, gender, Tel, password, mail, rank)
+            usersdict[username] = user  # 字典的键为用户名  值为用户属性
     return usersdict
 
 
-id_ = input("请输入要查找的账号：")
-usersdict = read_csv('ex2-1.用户信息.csv')
-if id_ in usersdict:
-    s = usersdict[id_]
+username = input("请输入要查找的账号：")
+readfile = 'ex2-1.用户信息.csv'
+usersdict = read_csv(readfile)
+if username in usersdict:
+    s = usersdict[username]  # 获取字典中键为username的值信息
     print(s.id, s.username, s.name, s.gender, s.Tel, s.password, s.mail, s.rank)
 else:
     print('查无此人！')
 
-ranks = set()
-values = usersdict.values()
+
+ranks = set()  # 新建一个集合
+values = usersdict.values()  # 获取字典中所有值
 for s in values:
-    ranks.add(s.rank)
-print(f'共有有{len(ranks)}种用户级别，即', ranks)
+    ranks.add(s.rank)  # 将所有值中的等级属性加入到ranks集合中
+print(f'共有有{len(ranks)}种用户级别，即{ranks}')
