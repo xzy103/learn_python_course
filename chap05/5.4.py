@@ -4,7 +4,7 @@
 
 import pandas as pd
 
-filename = '../chap03/ex2-2.scores.csv'
+filename = '../chap03/ex2-2.scores.csv'  # 相对路径
 
 with open(filename, mode="r", encoding="utf-8") as file:
     df = pd.read_csv(file)
