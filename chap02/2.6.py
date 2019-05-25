@@ -6,10 +6,16 @@ import math
 
 a = float(input("请输入a值："))  # a是全局变量
 
-f = lambda x: x**3-a
-f_derivative = lambda x: 3*x**2
 
-ep = 0.000000000001
+def f(x):
+    return x**3-a
+
+
+def f_derivative(x):
+    return 3*x**2
+
+
+ep = 0.000000000001  # 设定精度
 xk = xk1 = 1
 
 while True:
