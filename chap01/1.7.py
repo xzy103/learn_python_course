@@ -9,16 +9,18 @@ def which_day(calendar):
     :param calendar: 整数表示的日期
     :return: year, mon, day 分别表示年 月 日
     """
-    year = calendar//10000
+    year = calendar//10000  # 获取年
     mon_day = calendar % (10000*year)
-    mon = mon_day//100
-    day = mon_day % (100*mon)
+    mon = mon_day//100  # 获取月
+    day = mon_day % (100*mon)  # 获取日
+
     if year <= 0:
         raise ValueError("年份需大于0！")
     if mon not in range(1, 13):
         raise ValueError("月份数值非法！")
     if day not in range(1, 31):
         raise ValueError("日期数值非法！")
+
     return year, mon, day
 
 
