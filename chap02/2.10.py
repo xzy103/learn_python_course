@@ -5,7 +5,7 @@
 
 n = int(input('请输入行数：'))  # 行数
 
-if n % 2:
+if n % 2:  # 如果是奇数
     for i in reversed(range(n)):
         print(' ' * (n-i-1), end='')
         for j in range(i*2+1):
