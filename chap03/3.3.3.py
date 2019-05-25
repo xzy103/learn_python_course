@@ -13,7 +13,7 @@ class Score:
         self.class_ = class_
         self.math = math
         self.literature = literature
-        self.sum = sum_
+        self.sum = sum_  # 总分属性
 
 
 filename = 'ex2-2.scores.csv'
