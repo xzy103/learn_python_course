@@ -5,7 +5,7 @@
 
 def calculate(p, r, n):
     """
-    这个函数用于计算复利。
+    这是计算复利的函数
     :param p: 本金
     :param r: 年利率
     :param n: 计算期数
@@ -18,7 +18,8 @@ def calculate(p, r, n):
 
 price = float(input("请输入本金："))
 rate = float(input("请输入利率（小数）："))
-years = float(input("请输入存款年份："))
+years = float(input("请输入存款年限："))
+
 if price < 0:
     raise ValueError("本金不能为负数！")
 if rate < 0:
@@ -26,5 +27,5 @@ if rate < 0:
 if years <= 0:
     raise ValueError("计息期数应为正数！")
 
-total = calculate(price, rate, years)
+total = calculate(price, rate, years)  # 计算含复利的本利和
 print(f"到期总金额为：{total}元。")
