@@ -1,10 +1,10 @@
 # learn_python_course
 python程序设计基础课练习与存档  
-**仅供参考，请勿抄袭！**  
 https://github.com/xzy103/learn_python_course  
+> 注：代码中使用了相对路径，请保证文件夹结构的完整性。  
 
 ## Teaching Materials
-教学材料文件夹，仅供学习参考，请勿大肆传播和商用！  
+教学材料文件夹，仅供学习参考，请勿传播和商用！  
 [查看教学示例代码](https://github.com/royqh1979/programming_with_python)  
 
 ## TODO
@@ -14,7 +14,7 @@ https://github.com/xzy103/learn_python_course
 - [x] 完成第四章并上传 (函数)  
 - [x] 完成第五章并上传 (Numpy)  
 - [x] 完成第六章并上传 (递归)  
-- [ ] 检查所有代码并添加注释  
+- [x] 检查所有代码并添加注释  
 
 
 ## About me
