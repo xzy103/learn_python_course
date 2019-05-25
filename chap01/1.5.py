@@ -17,7 +17,7 @@ def calculate(p, r, n):
 
 
 price = float(input("请输入本金："))
-rate = float(input("请输入利率（小数）："))
+rate = float(input("请输入利率(小数)："))
 years = float(input("请输入存款年限："))
 
 if price < 0:
