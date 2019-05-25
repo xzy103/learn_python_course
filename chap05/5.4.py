@@ -10,4 +10,4 @@ with open(filename, mode="r", encoding="utf-8") as file:
     df = pd.read_csv(file)
 
 df["总分"] = df["数学"]+df["语文"]
-df.to_csv("./含总分成绩.csv")
+df.to_csv("./含总分成绩.csv")  # .表示当前文件夹 ..表示上一层文件夹
