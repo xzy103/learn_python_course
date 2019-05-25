@@ -67,7 +67,7 @@ if uinfo == -1:
     print(f'找不到姓名为{name}的学生')
 else:
     print('顺序查找的结果为↓')
-    print(f'id:{uinfo.id}\nname:{uinfo.name}\nclass:{uinfo.class_}\nmath:{uinfo.math}\nliterature:{uinfo.literature}')
+    print(f'id:{uinfo.id}\nname:{uinfo.name}\nclass:{uinfo.class_}\nmath:{uinfo.math}\nliterature:{uinfo.literature}\n')
 
 
 uinfo = find_by_name2(scores, name)
