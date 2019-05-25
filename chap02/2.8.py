@@ -52,7 +52,7 @@ print('>>>>>模拟过程约需要10s-30s.')
 t = 550  # 搬运时间间隔，粗略测试后设置为550。
 ratio_b_temp = 0  # break前一次的ratio_b值
 while True:
-    rend(t)
+    rend(t)  # 进行一次实验 这次实验的时间间隔设为t
     if ratio_b > 5:
         ratio_b = ratio_b_temp
         t -= 1
