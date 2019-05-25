@@ -32,4 +32,4 @@ def get_tax(income):
 
 income_raw = float(input("请输入税前收入："))
 person_tax = get_tax(income_raw)
-print(f"您应缴的个人所得税为{round(person_tax, 2)}元。")
+print(f"您应缴的个人所得税为{person_tax:.2f}元。")  # 保留两位小数
