@@ -16,13 +16,17 @@ def factor_sum(n: int):
     return s
 
 
-tip = """提示：(a,b) -> (220,284) 和 (284,220)视为相同的一对\n>>>>>Begin..."""
+tip = """
+提示：(a,b) -> (220,284) 和 (284,220)视为相同的一对
+假设a不等于b  例如6和6不视为亲密数
+>>>>>Begin...
+"""
 print(tip)
 
 n = 20000
 for i in range(1, n+1):
     result = factor_sum(i)
-    if factor_sum(result) == i <= result:
+    if factor_sum(result) == i < result:
         print('Bingo!Find a pair:', i, result)
 
 print('Done!')
